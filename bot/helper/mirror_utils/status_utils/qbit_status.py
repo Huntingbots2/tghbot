@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 from asyncio import sleep
 
-from bot import LOGGER, get_client, QbTorrents, qb_listener_lock
-from bot.helper.ext_utils.bot_utils import (
+from tghbot import LOGGER, get_client, QbTorrents, qb_listener_lock
+from tghbot.helper.ext_utils.bot_utils import (
     EngineStatus,
     MirrorStatus,
     get_readable_file_size,

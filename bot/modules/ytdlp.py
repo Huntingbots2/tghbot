@@ -8,9 +8,9 @@ from yt_dlp import YoutubeDL
 from functools import partial
 from time import time
 
-from bot import DOWNLOAD_DIR, bot, categories_dict, config_dict, user_data, LOGGER
-from bot.helper.ext_utils.task_manager import task_utils
-from bot.helper.telegram_helper.message_utils import (
+from tghbot import DOWNLOAD_DIR, bot, categories_dict, config_dict, user_data, LOGGER
+from tghbot.helper.ext_utils.task_manager import task_utils
+from tghbot.helper.telegram_helper.message_utils import (
     sendMessage,
     editMessage,
     deleteMessage,
@@ -19,8 +19,8 @@ from bot.helper.telegram_helper.message_utils import (
     open_category_btns,
     open_dump_btns,
 )
-from bot.helper.telegram_helper.button_build import ButtonMaker
-from bot.helper.ext_utils.bot_utils import (
+from tghbot.helper.telegram_helper.button_build import ButtonMaker
+from tghbot.helper.ext_utils.bot_utils import (
     get_readable_file_size,
     fetch_user_tds,
     fetch_user_dumps,
@@ -34,14 +34,14 @@ from bot.helper.ext_utils.bot_utils import (
     get_readable_time,
     arg_parser,
 )
-from bot.helper.mirror_utils.download_utils.yt_dlp_download import YoutubeDLHelper
-from bot.helper.mirror_utils.rclone_utils.list import RcloneList
-from bot.helper.telegram_helper.bot_commands import BotCommands
-from bot.helper.mirror_utils.upload_utils.gdriveTools import GoogleDriveHelper
-from bot.helper.telegram_helper.filters import CustomFilters
-from bot.helper.listeners.tasks_listener import MirrorLeechListener
-from bot.helper.ext_utils.help_messages import YT_HELP_MESSAGE
-from bot.helper.ext_utils.bulk_links import extract_bulk_links
+from tghbot.helper.mirror_utils.download_utils.yt_dlp_download import YoutubeDLHelper
+from tghbot.helper.mirror_utils.rclone_utils.list import RcloneList
+from tghbot.helper.telegram_helper.bot_commands import BotCommands
+from tghbot.helper.mirror_utils.upload_utils.gdriveTools import GoogleDriveHelper
+from tghbot.helper.telegram_helper.filters import CustomFilters
+from tghbot.helper.listeners.tasks_listener import MirrorLeechListener
+from tghbot.helper.ext_utils.help_messages import YT_HELP_MESSAGE
+from tghbot.helper.ext_utils.bulk_links import extract_bulk_links
 
 
 @new_task

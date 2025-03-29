@@ -2,18 +2,18 @@
 from pyrogram.handlers import MessageHandler
 from pyrogram.filters import command
 
-from bot import bot
-from bot.helper.mirror_utils.upload_utils.gdriveTools import GoogleDriveHelper
-from bot.helper.telegram_helper.message_utils import deleteMessage, sendMessage
-from bot.helper.telegram_helper.filters import CustomFilters
-from bot.helper.telegram_helper.bot_commands import BotCommands
-from bot.helper.ext_utils.bot_utils import (
+from tghbot import bot
+from tghbot.helper.mirror_utils.upload_utils.gdriveTools import GoogleDriveHelper
+from tghbot.helper.telegram_helper.message_utils import deleteMessage, sendMessage
+from tghbot.helper.telegram_helper.filters import CustomFilters
+from tghbot.helper.telegram_helper.bot_commands import BotCommands
+from tghbot.helper.ext_utils.bot_utils import (
     is_gdrive_link,
     sync_to_async,
     new_task,
     get_readable_file_size,
 )
-from bot.helper.themes import BotTheme
+from tghbot.helper.themes import BotTheme
 
 
 @new_task

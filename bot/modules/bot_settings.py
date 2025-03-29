@@ -14,7 +14,7 @@ from time import time
 from io import BytesIO
 from aioshutil import rmtree as aiormtree
 
-from bot import (
+from tghbot import (
     config_dict,
     user_data,
     DATABASE_URL,
@@ -36,24 +36,24 @@ from bot import (
     extra_buttons,
     shorteners_list,
 )
-from bot.helper.telegram_helper.message_utils import (
+from tghbot.helper.telegram_helper.message_utils import (
     sendMessage,
     sendFile,
     editMessage,
     deleteMessage,
     update_all_messages,
 )
-from bot.helper.telegram_helper.filters import CustomFilters
-from bot.helper.telegram_helper.bot_commands import BotCommands
-from bot.helper.telegram_helper.button_build import ButtonMaker
-from bot.helper.ext_utils.bot_utils import setInterval, sync_to_async, new_thread
-from bot.helper.ext_utils.db_handler import DbManger
-from bot.helper.ext_utils.task_manager import start_from_queued
-from bot.helper.ext_utils.help_messages import default_desp
-from bot.helper.mirror_utils.rclone_utils.serve import rclone_serve_booter
-from bot.modules.torrent_search import initiate_search_tools
-from bot.modules.rss import addJob
-from bot.helper.themes import AVL_THEMES
+from tghbot.helper.telegram_helper.filters import CustomFilters
+from tghbot.helper.telegram_helper.bot_commands import BotCommands
+from tghbot.helper.telegram_helper.button_build import ButtonMaker
+from tghbot.helper.ext_utils.bot_utils import setInterval, sync_to_async, new_thread
+from tghbot.helper.ext_utils.db_handler import DbManger
+from tghbot.helper.ext_utils.task_manager import start_from_queued
+from tghbot.helper.ext_utils.help_messages import default_desp
+from tghbot.helper.mirror_utils.rclone_utils.serve import rclone_serve_booter
+from tghbot.modules.torrent_search import initiate_search_tools
+from tghbot.modules.rss import addJob
+from tghbot.helper.themes import AVL_THEMES
 
 START = 0
 STATE = "view"

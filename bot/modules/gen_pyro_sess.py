@@ -22,17 +22,17 @@ from pyrogram.errors import (
     PeerIdInvalid,
 )
 
-from bot import bot, LOGGER, bot_cache, bot_name
-from bot.helper.telegram_helper.button_build import ButtonMaker
-from bot.helper.ext_utils.bot_utils import new_thread, new_task
-from bot.helper.telegram_helper.message_utils import (
+from tghbot import bot, LOGGER, bot_cache, bot_name
+from tghbot.helper.telegram_helper.button_build import ButtonMaker
+from tghbot.helper.ext_utils.bot_utils import new_thread, new_task
+from tghbot.helper.telegram_helper.message_utils import (
     sendMessage,
     editMessage,
     deleteMessage,
     sendFile,
     sendCustomMsg,
 )
-from bot.helper.telegram_helper.filters import CustomFilters
+from tghbot.helper.telegram_helper.filters import CustomFilters
 
 session_dict = {}
 session_lock = Lock()

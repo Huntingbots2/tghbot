@@ -5,18 +5,18 @@ from aiohttp import ClientSession
 from html import escape
 from urllib.parse import quote
 
-from bot import bot, LOGGER, config_dict, get_client
-from bot.helper.telegram_helper.message_utils import editMessage, sendMessage
-from bot.helper.ext_utils.telegraph_helper import telegraph
-from bot.helper.telegram_helper.filters import CustomFilters
-from bot.helper.telegram_helper.bot_commands import BotCommands
-from bot.helper.ext_utils.bot_utils import (
+from tghbot import bot, LOGGER, config_dict, get_client
+from tghbot.helper.telegram_helper.message_utils import editMessage, sendMessage
+from tghbot.helper.ext_utils.telegraph_helper import telegraph
+from tghbot.helper.telegram_helper.filters import CustomFilters
+from tghbot.helper.telegram_helper.bot_commands import BotCommands
+from tghbot.helper.ext_utils.bot_utils import (
     get_readable_file_size,
     sync_to_async,
     new_task,
     checking_access,
 )
-from bot.helper.telegram_helper.button_build import ButtonMaker
+from tghbot.helper.telegram_helper.button_build import ButtonMaker
 
 PLUGINS = []
 SITES = None

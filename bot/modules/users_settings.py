@@ -15,7 +15,7 @@ from asyncio import sleep
 from cryptography.fernet import Fernet
 
 import asyncio
-from bot import (
+from tghbot import (
     OWNER_ID,
     LOGGER,
     bot,
@@ -26,7 +26,7 @@ from bot import (
     IS_PREMIUM_USER,
     MAX_SPLIT_SIZE,
 )
-from bot.helper.telegram_helper.message_utils import (
+from tghbot.helper.telegram_helper.message_utils import (
     sendMessage,
     sendCustomMsg,
     editMessage,
@@ -35,12 +35,12 @@ from bot.helper.telegram_helper.message_utils import (
     chat_info,
     user_info,
 )
-from bot.helper.telegram_helper.filters import CustomFilters
-from bot.helper.telegram_helper.bot_commands import BotCommands
-from bot.helper.telegram_helper.button_build import ButtonMaker
-from bot.helper.mirror_utils.upload_utils.gdriveTools import GoogleDriveHelper
-from bot.helper.ext_utils.db_handler import DbManger
-from bot.helper.ext_utils.bot_utils import (
+from tghbot.helper.telegram_helper.filters import CustomFilters
+from tghbot.helper.telegram_helper.bot_commands import BotCommands
+from tghbot.helper.telegram_helper.button_build import ButtonMaker
+from tghbot.helper.mirror_utils.upload_utils.gdriveTools import GoogleDriveHelper
+from tghbot.helper.ext_utils.db_handler import DbManger
+from tghbot.helper.ext_utils.bot_utils import (
     getdailytasks,
     update_user_ldata,
     get_readable_file_size,
@@ -48,8 +48,8 @@ from bot.helper.ext_utils.bot_utils import (
     new_thread,
     is_gdrive_link,
 )
-from bot.helper.mirror_utils.upload_utils.ddlserver.gofile import Gofile
-from bot.helper.themes import BotTheme
+from tghbot.helper.mirror_utils.upload_utils.ddlserver.gofile import Gofile
+from tghbot.helper.themes import BotTheme
 
 handler_dict = {}
 desp_dict = {

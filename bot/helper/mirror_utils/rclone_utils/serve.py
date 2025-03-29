@@ -3,7 +3,7 @@ from aiofiles.os import path as aiopath
 from aiofiles import open as aiopen
 from configparser import ConfigParser
 
-from bot import config_dict, bot_loop
+from tghbot import config_dict, bot_loop
 
 RcloneServe = []
 

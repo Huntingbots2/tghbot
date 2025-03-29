@@ -4,7 +4,7 @@ from pyrogram.handlers import CallbackQueryHandler
 from pyrogram.filters import regex
 from asyncio import sleep
 
-from bot import bot, bot_name, user_data
+from tghbot import bot, bot_name, user_data
 
 
 async def save_message(_, query):

@@ -3,23 +3,23 @@ from json import dumps as jdumps
 from secrets import token_hex
 from cloudscraper import create_scraper as cget
 
-from bot import (
+from tghbot import (
     download_dict,
     download_dict_lock,
     LOGGER,
     non_queued_dl,
     queue_dict_lock,
 )
-from bot.helper.mirror_utils.upload_utils.gdriveTools import GoogleDriveHelper
-from bot.helper.mirror_utils.status_utils.gdrive_status import GdriveStatus
-from bot.helper.mirror_utils.status_utils.queue_status import QueueStatus
-from bot.helper.telegram_helper.message_utils import sendMessage, sendStatusMessage
-from bot.helper.ext_utils.bot_utils import (
+from tghbot.helper.mirror_utils.upload_utils.gdriveTools import GoogleDriveHelper
+from tghbot.helper.mirror_utils.status_utils.gdrive_status import GdriveStatus
+from tghbot.helper.mirror_utils.status_utils.queue_status import QueueStatus
+from tghbot.helper.telegram_helper.message_utils import sendMessage, sendStatusMessage
+from tghbot.helper.ext_utils.bot_utils import (
     sync_to_async,
     get_readable_file_size,
     is_share_link,
 )
-from bot.helper.ext_utils.task_manager import (
+from tghbot.helper.ext_utils.task_manager import (
     is_queued,
     limit_checker,
     stop_duplicate_check,

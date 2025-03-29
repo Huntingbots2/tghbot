@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-from bot.helper.ext_utils.bot_utils import (
+from tghbot.helper.ext_utils.bot_utils import (
     EngineStatus,
     get_readable_file_size,
     MirrorStatus,

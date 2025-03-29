@@ -9,12 +9,12 @@ from pyrogram.filters import command, regex
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from pyrogram.errors import MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty
 
-from bot import bot, LOGGER, user_data, config_dict
-from bot.helper.telegram_helper.filters import CustomFilters
-from bot.helper.telegram_helper.bot_commands import BotCommands
-from bot.helper.telegram_helper.message_utils import sendMessage, editMessage
-from bot.helper.ext_utils.bot_utils import get_readable_time
-from bot.helper.telegram_helper.button_build import ButtonMaker
+from tghbot import bot, LOGGER, user_data, config_dict
+from tghbot.helper.telegram_helper.filters import CustomFilters
+from tghbot.helper.telegram_helper.bot_commands import BotCommands
+from tghbot.helper.telegram_helper.message_utils import sendMessage, editMessage
+from tghbot.helper.ext_utils.bot_utils import get_readable_time
+from tghbot.helper.telegram_helper.button_build import ButtonMaker
 
 imdb = Cinemagoer()
 

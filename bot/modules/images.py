@@ -6,17 +6,17 @@ from telegraph import upload_file
 from pyrogram.handlers import MessageHandler, CallbackQueryHandler
 from pyrogram.filters import command, regex
 
-from bot import bot, LOGGER, config_dict, DATABASE_URL
-from bot.helper.telegram_helper.message_utils import (
+from tghbot import bot, LOGGER, config_dict, DATABASE_URL
+from tghbot.helper.telegram_helper.message_utils import (
     sendMessage,
     editMessage,
     deleteMessage,
 )
-from bot.helper.ext_utils.bot_utils import handleIndex, new_task
-from bot.helper.telegram_helper.filters import CustomFilters
-from bot.helper.telegram_helper.bot_commands import BotCommands
-from bot.helper.ext_utils.db_handler import DbManger
-from bot.helper.telegram_helper.button_build import ButtonMaker
+from tghbot.helper.ext_utils.bot_utils import handleIndex, new_task
+from tghbot.helper.telegram_helper.filters import CustomFilters
+from tghbot.helper.telegram_helper.bot_commands import BotCommands
+from tghbot.helper.ext_utils.db_handler import DbManger
+from tghbot.helper.telegram_helper.button_build import ButtonMaker
 
 
 @new_task

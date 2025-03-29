@@ -7,12 +7,12 @@ from calendar import month_name
 from pycountry import countries as conn
 from urllib.parse import quote as q
 
-from bot import bot, LOGGER, config_dict, user_data
-from bot.helper.telegram_helper.filters import CustomFilters
-from bot.helper.telegram_helper.bot_commands import BotCommands
-from bot.helper.telegram_helper.message_utils import sendMessage, editMessage
-from bot.helper.telegram_helper.button_build import ButtonMaker
-from bot.helper.ext_utils.bot_utils import get_readable_time
+from tghbot import bot, LOGGER, config_dict, user_data
+from tghbot.helper.telegram_helper.filters import CustomFilters
+from tghbot.helper.telegram_helper.bot_commands import BotCommands
+from tghbot.helper.telegram_helper.message_utils import sendMessage, editMessage
+from tghbot.helper.telegram_helper.button_build import ButtonMaker
+from tghbot.helper.ext_utils.bot_utils import get_readable_time
 from pyrogram.handlers import MessageHandler, CallbackQueryHandler
 from pyrogram.filters import command, regex
 

@@ -3,11 +3,11 @@ from pyrogram.handlers import MessageHandler, EditedMessageHandler
 from pyrogram.filters import command
 from io import BytesIO
 
-from bot import LOGGER, bot
-from bot.helper.telegram_helper.message_utils import sendMessage, sendFile
-from bot.helper.ext_utils.bot_utils import cmd_exec, new_task
-from bot.helper.telegram_helper.filters import CustomFilters
-from bot.helper.telegram_helper.bot_commands import BotCommands
+from tghbot import LOGGER, bot
+from tghbot.helper.telegram_helper.message_utils import sendMessage, sendFile
+from tghbot.helper.ext_utils.bot_utils import cmd_exec, new_task
+from tghbot.helper.telegram_helper.filters import CustomFilters
+from tghbot.helper.telegram_helper.bot_commands import BotCommands
 
 
 @new_task

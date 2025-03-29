@@ -1,7 +1,7 @@
 from time import sleep
 
-from bot import LOGGER, aria2
-from bot.helper.ext_utils.bot_utils import async_to_sync, sync_to_async
+from tghbot import LOGGER, aria2
+from tghbot.helper.ext_utils.bot_utils import async_to_sync, sync_to_async
 
 
 class DirectListener:

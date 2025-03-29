@@ -24,7 +24,7 @@ from pyrogram.errors import (
     MediaEmpty,
 )
 
-from bot import (
+from tghbot import (
     config_dict,
     user_data,
     categories_dict,
@@ -38,7 +38,7 @@ from bot import (
     user,
     download_dict_lock,
 )
-from bot.helper.ext_utils.bot_utils import (
+from tghbot.helper.ext_utils.bot_utils import (
     get_readable_message,
     setInterval,
     sync_to_async,
@@ -47,8 +47,8 @@ from bot.helper.ext_utils.bot_utils import (
     fetch_user_dumps,
     new_thread,
 )
-from bot.helper.telegram_helper.button_build import ButtonMaker
-from bot.helper.ext_utils.exceptions import TgLinkException
+from tghbot.helper.telegram_helper.button_build import ButtonMaker
+from tghbot.helper.ext_utils.exceptions import TgLinkException
 
 
 async def sendMessage(message, text, buttons=None, photo=None, **kwargs):

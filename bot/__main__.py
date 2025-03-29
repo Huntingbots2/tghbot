@@ -19,7 +19,7 @@ from pyrogram.handlers import MessageHandler, CallbackQueryHandler
 from pyrogram.filters import command, private, regex
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
-from bot import (
+from tghbot import (
     bot,
     user,
     bot_name,
@@ -33,7 +33,7 @@ from bot import (
     INCOMPLETE_TASK_NOTIFIER,
     scheduler,
 )
-from bot.version import get_version
+from tghbot.version import get_version
 from .helper.ext_utils.fs_utils import start_cleanup, clean_all, exit_clean_up
 from .helper.ext_utils.bot_utils import (
     get_readable_time,

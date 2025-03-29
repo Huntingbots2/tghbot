@@ -14,11 +14,11 @@ from pyrogram.errors import (
     ReplyMarkupInvalid,
 )
 
-from bot import LOGGER, bot, config_dict, user_data
-from bot.helper.telegram_helper.filters import CustomFilters
-from bot.helper.telegram_helper.message_utils import sendMessage, editMessage
-from bot.helper.telegram_helper.bot_commands import BotCommands
-from bot.helper.telegram_helper.button_build import ButtonMaker
+from tghbot import LOGGER, bot, config_dict, user_data
+from tghbot.helper.telegram_helper.filters import CustomFilters
+from tghbot.helper.telegram_helper.message_utils import sendMessage, editMessage
+from tghbot.helper.telegram_helper.bot_commands import BotCommands
+from tghbot.helper.telegram_helper.button_build import ButtonMaker
 
 LIST_ITEMS = 4
 IMDB_GENRE_EMOJI = {

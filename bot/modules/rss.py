@@ -11,20 +11,20 @@ from apscheduler.triggers.interval import IntervalTrigger
 from re import split as re_split
 from io import BytesIO
 
-from bot import scheduler, rss_dict, LOGGER, DATABASE_URL, config_dict, bot
-from bot.helper.telegram_helper.message_utils import (
+from tghbot import scheduler, rss_dict, LOGGER, DATABASE_URL, config_dict, bot
+from tghbot.helper.telegram_helper.message_utils import (
     sendMessage,
     editMessage,
     sendRss,
     sendFile,
 )
-from bot.helper.telegram_helper.filters import CustomFilters
-from bot.helper.telegram_helper.bot_commands import BotCommands
-from bot.helper.ext_utils.db_handler import DbManger
-from bot.helper.telegram_helper.button_build import ButtonMaker
-from bot.helper.ext_utils.bot_utils import new_thread
-from bot.helper.ext_utils.exceptions import RssShutdownException
-from bot.helper.ext_utils.help_messages import RSS_HELP_MESSAGE
+from tghbot.helper.telegram_helper.filters import CustomFilters
+from tghbot.helper.telegram_helper.bot_commands import BotCommands
+from tghbot.helper.ext_utils.db_handler import DbManger
+from tghbot.helper.telegram_helper.button_build import ButtonMaker
+from tghbot.helper.ext_utils.bot_utils import new_thread
+from tghbot.helper.ext_utils.exceptions import RssShutdownException
+from tghbot.helper.ext_utils.help_messages import RSS_HELP_MESSAGE
 
 rss_dict_lock = Lock()
 handler_dict = {}

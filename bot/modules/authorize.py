@@ -2,12 +2,12 @@
 from pyrogram.handlers import MessageHandler
 from pyrogram.filters import command, regex
 
-from bot import user_data, DATABASE_URL, bot, LOGGER
-from bot.helper.telegram_helper.message_utils import sendMessage
-from bot.helper.telegram_helper.filters import CustomFilters
-from bot.helper.telegram_helper.bot_commands import BotCommands
-from bot.helper.ext_utils.db_handler import DbManger
-from bot.helper.ext_utils.bot_utils import update_user_ldata
+from tghbot import user_data, DATABASE_URL, bot, LOGGER
+from tghbot.helper.telegram_helper.message_utils import sendMessage
+from tghbot.helper.telegram_helper.filters import CustomFilters
+from tghbot.helper.telegram_helper.bot_commands import BotCommands
+from tghbot.helper.ext_utils.db_handler import DbManger
+from tghbot.helper.ext_utils.bot_utils import update_user_ldata
 
 
 async def authorize(client, message):

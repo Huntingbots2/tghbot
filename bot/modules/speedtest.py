@@ -3,15 +3,15 @@ from speedtest import Speedtest, ConfigRetrievalError
 from pyrogram.handlers import MessageHandler
 from pyrogram.filters import command
 
-from bot import bot, LOGGER
-from bot.helper.telegram_helper.filters import CustomFilters
-from bot.helper.telegram_helper.bot_commands import BotCommands
-from bot.helper.telegram_helper.message_utils import (
+from tghbot import bot, LOGGER
+from tghbot.helper.telegram_helper.filters import CustomFilters
+from tghbot.helper.telegram_helper.bot_commands import BotCommands
+from tghbot.helper.telegram_helper.message_utils import (
     sendMessage,
     deleteMessage,
     editMessage,
 )
-from bot.helper.ext_utils.bot_utils import get_readable_file_size, new_task
+from tghbot.helper.ext_utils.bot_utils import get_readable_file_size, new_task
 
 
 @new_task

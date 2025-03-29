@@ -9,12 +9,12 @@ from os import path as ospath, getcwd
 from pyrogram.handlers import MessageHandler
 from pyrogram.filters import command
 
-from bot import LOGGER, bot, config_dict
-from bot.helper.telegram_helper.filters import CustomFilters
-from bot.helper.telegram_helper.bot_commands import BotCommands
-from bot.helper.telegram_helper.message_utils import editMessage, sendMessage
-from bot.helper.ext_utils.bot_utils import cmd_exec
-from bot.helper.ext_utils.telegraph_helper import telegraph
+from tghbot import LOGGER, bot, config_dict
+from tghbot.helper.telegram_helper.filters import CustomFilters
+from tghbot.helper.telegram_helper.bot_commands import BotCommands
+from tghbot.helper.telegram_helper.message_utils import editMessage, sendMessage
+from tghbot.helper.ext_utils.bot_utils import cmd_exec
+from tghbot.helper.ext_utils.telegraph_helper import telegraph
 
 
 async def gen_mediainfo(message, link=None, media=None, mmsg=None):

@@ -17,15 +17,15 @@ from cloudscraper import create_scraper
 from lk21 import Bypass
 from http.cookiejar import MozillaCookieJar
 
-from bot import LOGGER, config_dict
-from bot.helper.ext_utils.bot_utils import (
+from tghbot import LOGGER, config_dict
+from tghbot.helper.ext_utils.bot_utils import (
     get_readable_time,
     is_share_link,
     is_index_link,
     is_magnet,
 )
-from bot.helper.ext_utils.exceptions import DirectDownloadLinkException
-from bot.helper.ext_utils.help_messages import PASSWORD_ERROR_MESSAGE
+from tghbot.helper.ext_utils.exceptions import DirectDownloadLinkException
+from tghbot.helper.ext_utils.help_messages import PASSWORD_ERROR_MESSAGE
 
 _caches = {}
 user_agent = (

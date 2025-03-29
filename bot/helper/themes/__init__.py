@@ -2,8 +2,8 @@
 from os import listdir
 from importlib import import_module
 from random import choice as rchoice
-from bot import config_dict, LOGGER
-from bot.helper.themes import wzml_minimal
+from tghbot import config_dict, LOGGER
+from tghbot.helper.themes import wzml_minimal
 
 AVL_THEMES = {}
 for theme in listdir("bot/helper/themes"):

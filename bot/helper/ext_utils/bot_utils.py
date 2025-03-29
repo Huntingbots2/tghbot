@@ -42,10 +42,10 @@ from pyrogram.enums import ChatType
 from pyrogram.types import BotCommand
 from pyrogram.errors import PeerIdInvalid
 
-from bot.helper.ext_utils.db_handler import DbManger
-from bot.helper.themes import BotTheme
-from bot.version import get_version
-from bot import (
+from tghbot.helper.ext_utils.db_handler import DbManger
+from tghbot.helper.themes import BotTheme
+from tghbot.version import get_version
+from tghbot import (
     OWNER_ID,
     bot_name,
     bot_cache,
@@ -62,10 +62,10 @@ from bot import (
     extra_buttons,
     user,
 )
-from bot.helper.telegram_helper.bot_commands import BotCommands
-from bot.helper.telegram_helper.button_build import ButtonMaker
-from bot.helper.ext_utils.telegraph_helper import telegraph
-from bot.helper.ext_utils.shortners import short_url
+from tghbot.helper.telegram_helper.bot_commands import BotCommands
+from tghbot.helper.telegram_helper.button_build import ButtonMaker
+from tghbot.helper.ext_utils.telegraph_helper import telegraph
+from tghbot.helper.ext_utils.shortners import short_url
 
 THREADPOOL = ThreadPoolExecutor(max_workers=1000)
 MAGNET_REGEX = r"magnet:\?xt=urn:(btih|btmh):[a-zA-Z0-9]*\s*"

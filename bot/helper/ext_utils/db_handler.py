@@ -5,7 +5,7 @@ from motor.motor_asyncio import AsyncIOMotorClient
 from pymongo.errors import PyMongoError
 from dotenv import dotenv_values
 
-from bot import (
+from tghbot import (
     DATABASE_URL,
     user_data,
     rss_dict,

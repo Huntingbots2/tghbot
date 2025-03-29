@@ -3,8 +3,8 @@ from pyrogram.filters import command, regex
 from pyrogram.handlers import CallbackQueryHandler, MessageHandler
 from time import time
 
-from bot import bot, bot_cache, categories_dict, download_dict, download_dict_lock
-from bot.helper.ext_utils.bot_utils import (
+from tghbot import bot, bot_cache, categories_dict, download_dict, download_dict_lock
+from tghbot.helper.ext_utils.bot_utils import (
     MirrorStatus,
     arg_parser,
     fetch_user_tds,
@@ -15,12 +15,12 @@ from bot.helper.ext_utils.bot_utils import (
     sync_to_async,
     get_readable_time,
 )
-from bot.helper.ext_utils.help_messages import CATEGORY_HELP_MESSAGE
-from bot.helper.mirror_utils.upload_utils.gdriveTools import GoogleDriveHelper
-from bot.helper.telegram_helper.bot_commands import BotCommands
-from bot.helper.telegram_helper.button_build import ButtonMaker
-from bot.helper.telegram_helper.filters import CustomFilters
-from bot.helper.telegram_helper.message_utils import (
+from tghbot.helper.ext_utils.help_messages import CATEGORY_HELP_MESSAGE
+from tghbot.helper.mirror_utils.upload_utils.gdriveTools import GoogleDriveHelper
+from tghbot.helper.telegram_helper.bot_commands import BotCommands
+from tghbot.helper.telegram_helper.button_build import ButtonMaker
+from tghbot.helper.telegram_helper.filters import CustomFilters
+from tghbot.helper.telegram_helper.message_utils import (
     editMessage,
     sendMessage,
     open_category_btns,

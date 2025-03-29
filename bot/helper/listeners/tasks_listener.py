@@ -13,7 +13,7 @@ from aioshutil import move
 from asyncio import create_subprocess_exec, sleep, Event
 from pyrogram.enums import ChatType
 
-from bot import (
+from tghbot import (
     OWNER_ID,
     Interval,
     aria2,
@@ -35,7 +35,7 @@ from bot import (
     bot,
     GLOBAL_EXTENSION_FILTER,
 )
-from bot.helper.ext_utils.bot_utils import (
+from tghbot.helper.ext_utils.bot_utils import (
     extra_btns,
     sync_to_async,
     get_readable_file_size,
@@ -43,7 +43,7 @@ from bot.helper.ext_utils.bot_utils import (
     is_mega_link,
     is_gdrive_link,
 )
-from bot.helper.ext_utils.fs_utils import (
+from tghbot.helper.ext_utils.fs_utils import (
     get_base_name,
     get_path_size,
     clean_download,
@@ -54,27 +54,27 @@ from bot.helper.ext_utils.fs_utils import (
     join_files,
     edit_metadata,
 )
-from bot.helper.ext_utils.leech_utils import (
+from tghbot.helper.ext_utils.leech_utils import (
     split_file,
     format_filename,
     get_document_type,
 )
-from bot.helper.ext_utils.exceptions import NotSupportedExtractionArchive
-from bot.helper.ext_utils.task_manager import start_from_queued
-from bot.helper.mirror_utils.status_utils.extract_status import ExtractStatus
-from bot.helper.mirror_utils.status_utils.zip_status import ZipStatus
-from bot.helper.mirror_utils.status_utils.split_status import SplitStatus
-from bot.helper.mirror_utils.status_utils.gdrive_status import GdriveStatus
-from bot.helper.mirror_utils.status_utils.telegram_status import TelegramStatus
-from bot.helper.mirror_utils.status_utils.ddl_status import DDLStatus
-from bot.helper.mirror_utils.status_utils.rclone_status import RcloneStatus
-from bot.helper.mirror_utils.status_utils.queue_status import QueueStatus
-from bot.helper.mirror_utils.upload_utils.gdriveTools import GoogleDriveHelper
-from bot.helper.mirror_utils.upload_utils.pyrogramEngine import TgUploader
-from bot.helper.mirror_utils.upload_utils.ddlEngine import DDLUploader
-from bot.helper.mirror_utils.rclone_utils.transfer import RcloneTransferHelper
-from bot.helper.mirror_utils.status_utils.metadata_status import MetadataStatus
-from bot.helper.telegram_helper.message_utils import (
+from tghbot.helper.ext_utils.exceptions import NotSupportedExtractionArchive
+from tghbot.helper.ext_utils.task_manager import start_from_queued
+from tghbot.helper.mirror_utils.status_utils.extract_status import ExtractStatus
+from tghbot.helper.mirror_utils.status_utils.zip_status import ZipStatus
+from tghbot.helper.mirror_utils.status_utils.split_status import SplitStatus
+from tghbot.helper.mirror_utils.status_utils.gdrive_status import GdriveStatus
+from tghbot.helper.mirror_utils.status_utils.telegram_status import TelegramStatus
+from tghbot.helper.mirror_utils.status_utils.ddl_status import DDLStatus
+from tghbot.helper.mirror_utils.status_utils.rclone_status import RcloneStatus
+from tghbot.helper.mirror_utils.status_utils.queue_status import QueueStatus
+from tghbot.helper.mirror_utils.upload_utils.gdriveTools import GoogleDriveHelper
+from tghbot.helper.mirror_utils.upload_utils.pyrogramEngine import TgUploader
+from tghbot.helper.mirror_utils.upload_utils.ddlEngine import DDLUploader
+from tghbot.helper.mirror_utils.rclone_utils.transfer import RcloneTransferHelper
+from tghbot.helper.mirror_utils.status_utils.metadata_status import MetadataStatus
+from tghbot.helper.telegram_helper.message_utils import (
     sendCustomMsg,
     sendMessage,
     editMessage,
@@ -84,9 +84,9 @@ from bot.helper.telegram_helper.message_utils import (
     sendMultiMessage,
     update_all_messages,
 )
-from bot.helper.telegram_helper.button_build import ButtonMaker
-from bot.helper.ext_utils.db_handler import DbManger
-from bot.helper.themes import BotTheme
+from tghbot.helper.telegram_helper.button_build import ButtonMaker
+from tghbot.helper.ext_utils.db_handler import DbManger
+from tghbot.helper.themes import BotTheme
 
 
 class MirrorLeechListener:

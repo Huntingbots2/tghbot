@@ -3,21 +3,21 @@ from asyncio import sleep
 from pyrogram.handlers import MessageHandler, CallbackQueryHandler
 from pyrogram.filters import command, regex
 
-from bot import download_dict, bot, bot_name, download_dict_lock, OWNER_ID, user_data
-from bot.helper.telegram_helper.bot_commands import BotCommands
-from bot.helper.telegram_helper.filters import CustomFilters
-from bot.helper.telegram_helper.message_utils import (
+from tghbot import download_dict, bot, bot_name, download_dict_lock, OWNER_ID, user_data
+from tghbot.helper.telegram_helper.bot_commands import BotCommands
+from tghbot.helper.telegram_helper.filters import CustomFilters
+from tghbot.helper.telegram_helper.message_utils import (
     sendMessage,
     deleteMessage,
     auto_delete_message,
 )
-from bot.helper.ext_utils.bot_utils import (
+from tghbot.helper.ext_utils.bot_utils import (
     getDownloadByGid,
     getAllDownload,
     MirrorStatus,
     new_task,
 )
-from bot.helper.telegram_helper import button_build
+from tghbot.helper.telegram_helper import button_build
 
 
 async def cancel_mirror(_, message):

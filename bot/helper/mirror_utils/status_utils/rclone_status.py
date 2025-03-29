@@ -1,4 +1,4 @@
-from bot.helper.ext_utils.bot_utils import EngineStatus, MirrorStatus
+from tghbot.helper.ext_utils.bot_utils import EngineStatus, MirrorStatus
 
 
 class RcloneStatus:

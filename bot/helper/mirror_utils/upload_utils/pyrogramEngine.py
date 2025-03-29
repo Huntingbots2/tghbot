@@ -26,7 +26,7 @@ from re import match as re_match, sub as re_sub
 from natsort import natsorted
 from aioshutil import copy
 
-from bot import (
+from tghbot import (
     config_dict,
     user_data,
     GLOBAL_EXTENSION_FILTER,
@@ -34,9 +34,9 @@ from bot import (
     user,
     IS_PREMIUM_USER,
 )
-from bot.helper.themes import BotTheme
-from bot.helper.telegram_helper.button_build import ButtonMaker
-from bot.helper.telegram_helper.message_utils import (
+from tghbot.helper.themes import BotTheme
+from tghbot.helper.telegram_helper.button_build import ButtonMaker
+from tghbot.helper.telegram_helper.message_utils import (
     sendCustomMsg,
     editReplyMarkup,
     sendMultiMessage,
@@ -44,15 +44,15 @@ from bot.helper.telegram_helper.message_utils import (
     deleteMessage,
     get_tg_link_content,
 )
-from bot.helper.ext_utils.fs_utils import clean_unwanted, is_archive, get_base_name
-from bot.helper.ext_utils.bot_utils import (
+from tghbot.helper.ext_utils.fs_utils import clean_unwanted, is_archive, get_base_name
+from tghbot.helper.ext_utils.bot_utils import (
     get_readable_file_size,
     is_telegram_link,
     is_url,
     sync_to_async,
     download_image_url,
 )
-from bot.helper.ext_utils.leech_utils import (
+from tghbot.helper.ext_utils.leech_utils import (
     get_audio_thumb,
     get_media_info,
     get_document_type,

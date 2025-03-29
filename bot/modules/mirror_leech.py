@@ -9,7 +9,7 @@ from aiofiles import open as aiopen
 from aiofiles.os import path as aiopath
 from cloudscraper import create_scraper
 
-from bot import (
+from tghbot import (
     bot,
     DOWNLOAD_DIR,
     LOGGER,
@@ -18,8 +18,8 @@ from bot import (
     categories_dict,
     user_data,
 )
-from bot.helper.mirror_utils.download_utils.direct_downloader import add_direct_download
-from bot.helper.ext_utils.bot_utils import (
+from tghbot.helper.mirror_utils.download_utils.direct_downloader import add_direct_download
+from tghbot.helper.ext_utils.bot_utils import (
     is_url,
     is_magnet,
     is_mega_link,
@@ -34,25 +34,25 @@ from bot.helper.ext_utils.bot_utils import (
     fetch_user_dumps,
     get_stats,
 )
-from bot.helper.ext_utils.exceptions import DirectDownloadLinkException
-from bot.helper.ext_utils.task_manager import task_utils
-from bot.helper.mirror_utils.download_utils.aria2_download import add_aria2c_download
-from bot.helper.mirror_utils.download_utils.gd_download import add_gd_download
-from bot.helper.mirror_utils.download_utils.qbit_download import add_qb_torrent
-from bot.helper.mirror_utils.download_utils.mega_download import add_mega_download
-from bot.helper.mirror_utils.download_utils.rclone_download import add_rclone_download
-from bot.helper.mirror_utils.rclone_utils.list import RcloneList
-from bot.helper.mirror_utils.upload_utils.gdriveTools import GoogleDriveHelper
-from bot.helper.mirror_utils.download_utils.direct_link_generator import (
+from tghbot.helper.ext_utils.exceptions import DirectDownloadLinkException
+from tghbot.helper.ext_utils.task_manager import task_utils
+from tghbot.helper.mirror_utils.download_utils.aria2_download import add_aria2c_download
+from tghbot.helper.mirror_utils.download_utils.gd_download import add_gd_download
+from tghbot.helper.mirror_utils.download_utils.qbit_download import add_qb_torrent
+from tghbot.helper.mirror_utils.download_utils.mega_download import add_mega_download
+from tghbot.helper.mirror_utils.download_utils.rclone_download import add_rclone_download
+from tghbot.helper.mirror_utils.rclone_utils.list import RcloneList
+from tghbot.helper.mirror_utils.upload_utils.gdriveTools import GoogleDriveHelper
+from tghbot.helper.mirror_utils.download_utils.direct_link_generator import (
     direct_link_generator,
 )
-from bot.helper.mirror_utils.download_utils.telegram_download import (
+from tghbot.helper.mirror_utils.download_utils.telegram_download import (
     TelegramDownloadHelper,
 )
-from bot.helper.telegram_helper.bot_commands import BotCommands
-from bot.helper.telegram_helper.filters import CustomFilters
-from bot.helper.telegram_helper.button_build import ButtonMaker
-from bot.helper.telegram_helper.message_utils import (
+from tghbot.helper.telegram_helper.bot_commands import BotCommands
+from tghbot.helper.telegram_helper.filters import CustomFilters
+from tghbot.helper.telegram_helper.button_build import ButtonMaker
+from tghbot.helper.telegram_helper.message_utils import (
     sendMessage,
     editMessage,
     editReplyMarkup,
@@ -63,15 +63,15 @@ from bot.helper.telegram_helper.message_utils import (
     open_category_btns,
     open_dump_btns,
 )
-from bot.helper.listeners.tasks_listener import MirrorLeechListener
-from bot.helper.ext_utils.help_messages import (
+from tghbot.helper.listeners.tasks_listener import MirrorLeechListener
+from tghbot.helper.ext_utils.help_messages import (
     MIRROR_HELP_MESSAGE,
     CLONE_HELP_MESSAGE,
     YT_HELP_MESSAGE,
     help_string,
 )
-from bot.helper.ext_utils.bulk_links import extract_bulk_links
-from bot.modules.gen_pyro_sess import get_decrypt_key
+from tghbot.helper.ext_utils.bulk_links import extract_bulk_links
+from tghbot.modules.gen_pyro_sess import get_decrypt_key
 
 
 @new_task

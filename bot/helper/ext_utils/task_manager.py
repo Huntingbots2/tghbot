@@ -2,7 +2,7 @@
 from time import time
 from asyncio import Event
 
-from bot import (
+from tghbot import (
     bot_cache,
     config_dict,
     queued_dl,
@@ -14,9 +14,9 @@ from bot import (
     user_data,
     download_dict,
 )
-from bot.helper.mirror_utils.upload_utils.gdriveTools import GoogleDriveHelper
-from bot.helper.ext_utils.fs_utils import get_base_name, check_storage_threshold
-from bot.helper.ext_utils.bot_utils import (
+from tghbot.helper.mirror_utils.upload_utils.gdriveTools import GoogleDriveHelper
+from tghbot.helper.ext_utils.fs_utils import get_base_name, check_storage_threshold
+from tghbot.helper.ext_utils.bot_utils import (
     get_user_tasks,
     getdailytasks,
     sync_to_async,
@@ -25,9 +25,9 @@ from bot.helper.ext_utils.bot_utils import (
     checking_access,
     get_readable_time,
 )
-from bot.helper.telegram_helper.message_utils import forcesub, check_botpm
-from bot.helper.telegram_helper.filters import CustomFilters
-from bot.helper.themes import BotTheme
+from tghbot.helper.telegram_helper.message_utils import forcesub, check_botpm
+from tghbot.helper.telegram_helper.filters import CustomFilters
+from tghbot.helper.themes import BotTheme
 
 
 async def stop_duplicate_check(name, listener):

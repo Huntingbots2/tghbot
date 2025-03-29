@@ -9,15 +9,15 @@ from functools import partial
 from json import loads
 from time import time
 
-from bot import LOGGER, config_dict
-from bot.helper.ext_utils.db_handler import DbManger
-from bot.helper.telegram_helper.button_build import ButtonMaker
-from bot.helper.telegram_helper.message_utils import (
+from tghbot import LOGGER, config_dict
+from tghbot.helper.ext_utils.db_handler import DbManger
+from tghbot.helper.telegram_helper.button_build import ButtonMaker
+from tghbot.helper.telegram_helper.message_utils import (
     sendMessage,
     editMessage,
     deleteMessage,
 )
-from bot.helper.ext_utils.bot_utils import (
+from tghbot.helper.ext_utils.bot_utils import (
     cmd_exec,
     new_thread,
     get_readable_file_size,

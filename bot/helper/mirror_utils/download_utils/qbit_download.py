@@ -2,7 +2,7 @@
 from time import time
 from aiofiles.os import remove as aioremove, path as aiopath
 
-from bot import (
+from tghbot import (
     download_dict,
     download_dict_lock,
     get_client,
@@ -11,15 +11,15 @@ from bot import (
     non_queued_dl,
     queue_dict_lock,
 )
-from bot.helper.mirror_utils.status_utils.qbit_status import QbittorrentStatus
-from bot.helper.telegram_helper.message_utils import (
+from tghbot.helper.mirror_utils.status_utils.qbit_status import QbittorrentStatus
+from tghbot.helper.telegram_helper.message_utils import (
     sendMessage,
     deleteMessage,
     sendStatusMessage,
 )
-from bot.helper.ext_utils.bot_utils import bt_selection_buttons, sync_to_async
-from bot.helper.listeners.qbit_listener import onDownloadStart
-from bot.helper.ext_utils.task_manager import is_queued
+from tghbot.helper.ext_utils.bot_utils import bt_selection_buttons, sync_to_async
+from tghbot.helper.listeners.qbit_listener import onDownloadStart
+from tghbot.helper.ext_utils.task_manager import is_queued
 
 
 """

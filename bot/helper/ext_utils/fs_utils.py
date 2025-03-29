@@ -9,11 +9,11 @@ from magic import Magic
 from re import split as re_split, I, search as re_search
 from subprocess import run as srun
 from sys import exit as sexit
-from bot import bot_cache
+from tghbot import bot_cache
 
 from .exceptions import NotSupportedExtractionArchive
-from bot import aria2, LOGGER, DOWNLOAD_DIR, get_client, GLOBAL_EXTENSION_FILTER
-from bot.helper.ext_utils.bot_utils import sync_to_async, cmd_exec
+from tghbot import aria2, LOGGER, DOWNLOAD_DIR, get_client, GLOBAL_EXTENSION_FILTER
+from tghbot.helper.ext_utils.bot_utils import sync_to_async, cmd_exec
 
 ARCH_EXT = [
     ".tar.bz2",

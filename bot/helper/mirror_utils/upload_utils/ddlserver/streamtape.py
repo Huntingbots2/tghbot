@@ -5,8 +5,8 @@ from aiofiles.os import scandir, path as aiopath
 from aiofiles import open as aiopen
 from aiohttp import ClientSession
 
-from bot import config_dict, LOGGER
-from bot.helper.ext_utils.telegraph_helper import telegraph
+from tghbot import config_dict, LOGGER
+from tghbot.helper.ext_utils.telegraph_helper import telegraph
 
 ALLOWED_EXTS = [
     ".avi",

@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 from time import time
 
-from bot import aria2, LOGGER
-from bot.helper.ext_utils.bot_utils import (
+from tghbot import aria2, LOGGER
+from tghbot.helper.ext_utils.bot_utils import (
     EngineStatus,
     MirrorStatus,
     get_readable_time,

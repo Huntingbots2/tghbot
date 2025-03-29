@@ -2,7 +2,7 @@
 from asyncio import sleep
 from time import time
 
-from bot import (
+from tghbot import (
     download_dict,
     download_dict_lock,
     get_client,
@@ -13,16 +13,16 @@ from bot import (
     LOGGER,
     bot_loop,
 )
-from bot.helper.mirror_utils.status_utils.qbit_status import QbittorrentStatus
-from bot.helper.telegram_helper.message_utils import update_all_messages
-from bot.helper.ext_utils.bot_utils import (
+from tghbot.helper.mirror_utils.status_utils.qbit_status import QbittorrentStatus
+from tghbot.helper.telegram_helper.message_utils import update_all_messages
+from tghbot.helper.ext_utils.bot_utils import (
     get_readable_time,
     getDownloadByGid,
     new_task,
     sync_to_async,
 )
-from bot.helper.ext_utils.fs_utils import clean_unwanted
-from bot.helper.ext_utils.task_manager import limit_checker, stop_duplicate_check
+from tghbot.helper.ext_utils.fs_utils import clean_unwanted
+from tghbot.helper.ext_utils.task_manager import limit_checker, stop_duplicate_check
 
 
 async def __remove_torrent(client, hash_, tag):

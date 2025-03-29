@@ -2,8 +2,8 @@
 from pyrogram.filters import create
 from pyrogram.enums import ChatType
 
-from bot import user_data, OWNER_ID
-from bot.helper.telegram_helper.message_utils import chat_info
+from tghbot import user_data, OWNER_ID
+from tghbot.helper.telegram_helper.message_utils import chat_info
 
 
 class CustomFilters:

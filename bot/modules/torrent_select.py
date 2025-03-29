@@ -4,7 +4,7 @@ from pyrogram.handlers import MessageHandler, CallbackQueryHandler
 from pyrogram.filters import regex
 from aiofiles.os import remove as aioremove, path as aiopath
 
-from bot import (
+from tghbot import (
     bot,
     bot_name,
     aria2,
@@ -14,14 +14,14 @@ from bot import (
     user_data,
     LOGGER,
 )
-from bot.helper.telegram_helper.bot_commands import BotCommands
-from bot.helper.telegram_helper.filters import CustomFilters
-from bot.helper.telegram_helper.message_utils import (
+from tghbot.helper.telegram_helper.bot_commands import BotCommands
+from tghbot.helper.telegram_helper.filters import CustomFilters
+from tghbot.helper.telegram_helper.message_utils import (
     sendMessage,
     sendStatusMessage,
     deleteMessage,
 )
-from bot.helper.ext_utils.bot_utils import (
+from tghbot.helper.ext_utils.bot_utils import (
     getDownloadByGid,
     MirrorStatus,
     bt_selection_buttons,

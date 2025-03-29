@@ -7,7 +7,7 @@ from aiofiles.os import path as aiopath
 from cloudscraper import create_scraper as cget
 from json import loads, dumps as jdumps
 
-from bot import (
+from tghbot import (
     LOGGER,
     download_dict,
     download_dict_lock,
@@ -15,9 +15,9 @@ from bot import (
     config_dict,
     bot,
 )
-from bot.helper.ext_utils.task_manager import limit_checker, task_utils
-from bot.helper.mirror_utils.upload_utils.gdriveTools import GoogleDriveHelper
-from bot.helper.telegram_helper.message_utils import (
+from tghbot.helper.ext_utils.task_manager import limit_checker, task_utils
+from tghbot.helper.mirror_utils.upload_utils.gdriveTools import GoogleDriveHelper
+from tghbot.helper.telegram_helper.message_utils import (
     sendMessage,
     editMessage,
     deleteMessage,
@@ -26,11 +26,11 @@ from bot.helper.telegram_helper.message_utils import (
     auto_delete_message,
     open_category_btns,
 )
-from bot.helper.telegram_helper.filters import CustomFilters
-from bot.helper.telegram_helper.bot_commands import BotCommands
-from bot.helper.telegram_helper.button_build import ButtonMaker
-from bot.helper.mirror_utils.status_utils.gdrive_status import GdriveStatus
-from bot.helper.ext_utils.bot_utils import (
+from tghbot.helper.telegram_helper.filters import CustomFilters
+from tghbot.helper.telegram_helper.bot_commands import BotCommands
+from tghbot.helper.telegram_helper.button_build import ButtonMaker
+from tghbot.helper.mirror_utils.status_utils.gdrive_status import GdriveStatus
+from tghbot.helper.ext_utils.bot_utils import (
     is_gdrive_link,
     new_task,
     get_readable_file_size,
@@ -43,16 +43,16 @@ from bot.helper.ext_utils.bot_utils import (
     get_telegraph_list,
     arg_parser,
 )
-from bot.helper.ext_utils.exceptions import DirectDownloadLinkException
-from bot.helper.mirror_utils.download_utils.direct_link_generator import (
+from tghbot.helper.ext_utils.exceptions import DirectDownloadLinkException
+from tghbot.helper.mirror_utils.download_utils.direct_link_generator import (
     direct_link_generator,
 )
-from bot.helper.mirror_utils.rclone_utils.list import RcloneList
-from bot.helper.mirror_utils.rclone_utils.transfer import RcloneTransferHelper
-from bot.helper.ext_utils.help_messages import CLONE_HELP_MESSAGE
-from bot.helper.mirror_utils.status_utils.rclone_status import RcloneStatus
-from bot.helper.listeners.tasks_listener import MirrorLeechListener
-from bot.helper.themes import BotTheme
+from tghbot.helper.mirror_utils.rclone_utils.list import RcloneList
+from tghbot.helper.mirror_utils.rclone_utils.transfer import RcloneTransferHelper
+from tghbot.helper.ext_utils.help_messages import CLONE_HELP_MESSAGE
+from tghbot.helper.mirror_utils.status_utils.rclone_status import RcloneStatus
+from tghbot.helper.listeners.tasks_listener import MirrorLeechListener
+from tghbot.helper.themes import BotTheme
 
 
 async def rcloneNode(client, message, link, dst_path, rcf, tag):

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 from aiofiles.os import remove as aioremove, path as aiopath
 
-from bot import (
+from tghbot import (
     aria2,
     download_dict_lock,
     download_dict,
@@ -12,10 +12,10 @@ from bot import (
     non_queued_dl,
     queue_dict_lock,
 )
-from bot.helper.ext_utils.bot_utils import bt_selection_buttons, sync_to_async
-from bot.helper.mirror_utils.status_utils.aria2_status import Aria2Status
-from bot.helper.telegram_helper.message_utils import sendStatusMessage, sendMessage
-from bot.helper.ext_utils.task_manager import is_queued
+from tghbot.helper.ext_utils.bot_utils import bt_selection_buttons, sync_to_async
+from tghbot.helper.mirror_utils.status_utils.aria2_status import Aria2Status
+from tghbot.helper.telegram_helper.message_utils import sendStatusMessage, sendMessage
+from tghbot.helper.ext_utils.task_manager import is_queued
 
 
 async def add_aria2c_download(link, path, listener, filename, header, ratio, seed_time):
